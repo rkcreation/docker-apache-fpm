@@ -16,6 +16,7 @@ RUN apt-get update && \
 ENV RUN_UID 8181
 ENV RUN_GID 8181
 ENV HOSTMASTER hostmaster@localhost
+ENV LOG_LEVEL info
 
 # Time config
 
