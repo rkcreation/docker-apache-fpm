@@ -32,4 +32,5 @@ RUN ntpd -gq \
 COPY conf/vhost.conf /usr/local/apache2/conf/vhost.conf
 COPY conf/httpd.conf /usr/local/apache2/conf/httpd.conf
 
-RUN mkdir /var/lib/php-fcgi
+RUN mkdir /var/lib/php-fcgi \
+    && mkdir /var/www
